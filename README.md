@@ -2,7 +2,7 @@
 
 Recurso de contador de trabajos para ESX
 
-![Preview image](https://imgur.com/a/jF3xWkx)
+![Preview image]https://imgur.com/a/jF3xWkx
 
 ## Caracteristicas
 
