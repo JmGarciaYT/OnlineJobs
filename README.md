@@ -1,6 +1,6 @@
 # Contador de trabajos
 
-Recurso de contador de trabajos para ESX
+Recurso de contador de trabajos para ESX v-1.1
 
 ![Preview image]https://imgur.com/a/jF3xWkx
 

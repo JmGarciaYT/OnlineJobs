@@ -95,6 +95,26 @@ function UpdatePlayerTable(connectedPlayers)
 	})
 end
 
+  
+Citizen.CreateThread(function()
+    Wait(50)
+    while true do
+        miid(1.425, 1.400, 1.0,1.0,0.45, "~w~Tu ID:~w~  ".. GetPlayerServerId(NetworkGetEntityOwner(GetPlayerPed(-1))) .. '')
+        Citizen.Wait(1)
+    end
+end)
+
+function miid(x,y ,width,height,scale, text, r,g,b,a, outline)
+    SetTextFont(4)
+    SetTextProportional(0)
+    SetTextScale(scale, scale)
+    SetTextDropShadow(2)
+	SetTextOutline()
+    SetTextEntry("STRING")
+    AddTextComponentString(text)
+    DrawText(x - width/2, y - height/2 + 0.005)
+end
+
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
@@ -103,22 +123,6 @@ Citizen.CreateThread(function()
 			ToggleScoreBoard()
 			Citizen.Wait(200)
 
-		end
-	end
-end)
-
--- Ocultar en el menu de pausa
-Citizen.CreateThread(function()
-	while true do
-		Citizen.Wait(300)
-
-		if IsPauseMenuActive() and not IsPaused then
-			IsPaused = true
-			SendNUIMessage({
-				action  = 'close'
-			})
-		elseif not IsPauseMenuActive() and IsPaused then
-			IsPaused = false
 		end
 	end
 end)

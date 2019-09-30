@@ -1,20 +1,10 @@
-/* Estas linea es la altura y el ancho del contador */
-#contador {
-	margin-top: 50%;
-	margin-left: 94%;
-
+.filauno {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: 5vw;
+    right: 3vw;
+    color: white;
+    font-size: 0.5vw;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
-/* Estas lineas es tamaño de la fuente y los emoticonos */
-.trabajos p {
-font-size: 0.9vw;
-	font-family: 'Russo One', sans-serif;
-	padding-top: 0px;
-}
-/* Estas lineas es para la ID del jugador*/
-table {
-	font-size: 0.9vw;
-	color: white;
-	margin-top: -23%;	
-	margin-left: 53%;
-}
-
