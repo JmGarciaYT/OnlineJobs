@@ -43,7 +43,7 @@ function AddPlayerToScoreboard(xPlayer, update)
 		TriggerClientEvent('OnlineJobs:updateConnectedPlayers', -1, connectedPlayers)
 	end
 
-	if xPlayer.player.getGroup() == 'user' then
+	if xPlayer.getGroup() == 'user' then
 		Citizen.CreateThread(function()
 			Citizen.Wait(3000)
 			TriggerClientEvent('OnlineJobs:toggleID', playerId, false)
