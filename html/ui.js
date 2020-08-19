@@ -33,7 +33,7 @@ $(function () {
 			case 'updatePlayerList':
 				$('#playerlist tr:gt(0)').remove();
 				$('#playerlist').append(event.data.players);
-				applyPingColor();
+				//applyPingColor();
 				//sortPlayerList();
 				break;
 
